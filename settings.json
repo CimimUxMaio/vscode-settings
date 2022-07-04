@@ -1,0 +1,117 @@
+{
+    "vim.leader": "¡",
+    "vim.easymotion": true,
+    "vim.statusBarColorControl": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-c>"],
+            "after": ["<Esc>"]
+        },
+
+        {
+            "before": ["<leader>", "s"],
+            "after": ["<leader>", "<leader>", "2", "s"]
+        },
+
+        {
+            "before": ["Q"],
+            "commands": [":tabclose"]
+        },
+        {
+            "before": ["L"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["H"],
+            "commands": [":tabprev"]
+        },
+
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"],
+            "when": "editorTextFocus"
+        },
+
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": ["workbench.action.showCommands"]
+        },
+
+        {
+            "before": ["<leader>", "<tab>"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.view.search"]
+        }
+
+        // {
+        //     "before": ["<C-H>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupLeft"]
+        // },
+        // {
+        //     "before": ["<C-L>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupRight"]
+        // },
+        // {
+        //     "before": ["<C-J>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupDown"]
+        // },
+        // {
+        //     "before": ["<C-K>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupUp"]
+        // },
+
+        // {
+        //     "before": ["<M-h>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupLeft"]
+        // },
+        // {
+        //     "before": ["<M-l>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupRight"]
+        // },
+        // {
+        //     "before": ["<M-j>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupDown"]
+        // },
+        // {
+        //     "before": ["<M-k>"],
+        //     "commands": ["workbench.action.moveActiveEditorGroupUp"]
+        // }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<C-c>"]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-c>"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["selectNextSuggestion"],
+            "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["selectPrevSuggestion"],
+            "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+        }
+    ],  
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ]
+}
